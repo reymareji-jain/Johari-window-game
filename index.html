@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hidden Self | Johari Window Team Insight Challenge</title>
+<style>
+:root{--ink:#172033;--muted:#617086;--paper:#f5f7fb;--card:#fff;--line:#dfe6ef;--teal:#087f8c;--teal2:#e0f5f4;--green:#dff4e8;--orange:#fff0df;--blue:#e4edff;--purple:#f0e6ff;--shadow:0 12px 34px rgba(23,32,51,.08)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#eef5f8,#f8f5ff 55%,#fff8ee);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.55}
+header{padding:34px 18px 26px;background:linear-gradient(125deg,#102b3f,#087f8c);color:white}header .wrap{max-width:960px;margin:auto} .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;opacity:.82}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.06;margin:10px 0 12px}header p{max-width:720px;color:#e5f5f7;margin:0;font-size:1.04rem}
+main{max-width:960px;margin:24px auto;padding:0 16px 48px}.toprow{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:.85rem;color:#405166}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,30px);box-shadow:var(--shadow);margin-bottom:18px}
+h2{font-size:1.45rem;margin:0 0 8px}h3{font-size:1.08rem;margin:0 0 8px}.sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.quadrant{border-radius:15px;padding:16px;min-height:132px}.q-open{background:var(--green)}.q-blind{background:var(--orange)}.q-hidden{background:var(--blue)}.q-unknown{background:var(--purple)}.quadrant p{margin:5px 0 0;font-size:.94rem}
+button{font:inherit;font-weight:750;border:0;border-radius:12px;padding:12px 17px;cursor:pointer;background:var(--teal);color:#fff;transition:.15s}button:hover{filter:brightness(.95);transform:translateY(-1px)}button:disabled{opacity:.4;cursor:not-allowed;transform:none}.secondary{background:#eaf0f6;color:#26364b}.ghost{background:transparent;color:var(--teal);border:1px solid #a7d8db}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.progressline{height:8px;background:#e8edf4;border-radius:99px;overflow:hidden;margin:14px 0 20px}.progressfill{height:100%;background:var(--teal);width:0;transition:width .25s}.meta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.86rem}
+.question{font-size:1.15rem;font-weight:750;margin:12px 0 16px}.options{display:grid;gap:9px}.option{display:flex;align-items:flex-start;gap:11px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;cursor:pointer;background:#fff}.option:hover{border-color:#83c9ce;background:#f7ffff}.option input{margin-top:5px;accent-color:var(--teal)}.option.selected{border-color:var(--teal);background:#eefafa}.feedback{background:#f1f8f8;border-left:4px solid var(--teal);padding:14px;border-radius:9px;margin-top:15px}
+label{display:block;font-weight:700;margin:14px 0 6px}input[type=text],textarea,select{width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:12px;font:inherit;background:white;color:var(--ink)}textarea{min-height:95px;resize:vertical}.small{font-size:.87rem;color:var(--muted)}.tag{display:inline-block;padding:4px 9px;border-radius:99px;background:#edf2f7;font-size:.8rem;font-weight:800}.hidden{display:none!important}.resultgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resultbox{border:1px solid var(--line);border-radius:14px;padding:15px}.bar{height:9px;background:#edf1f6;border-radius:99px;overflow:hidden;margin:8px 0}.bar span{display:block;height:100%;background:var(--teal);border-radius:99px}.notice{font-size:.92rem;background:#fff8e9;border:1px solid #f1ddb1;padding:13px;border-radius:12px}.tasklist li{margin:8px 0}.footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
+@media(max-width:650px){.grid,.resultgrid{grid-template-columns:1fr}.meta{align-items:flex-start}.panel{border-radius:16px}}
+@media print{header{background:#fff;color:#111;padding:12px}header p{color:#333}.panel{box-shadow:none;break-inside:avoid}button,.toprow{display:none}body{background:white}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">MSc Psychology · Organizational Behaviour Lab</div><h1>THE HIDDEN SELF</h1><p>A game-based Johari Window experience. Explore how you see yourself, how others may experience you, what you choose to share, and what you might discover through new challenges.</p></div></header>
+<main>
+<div class="toprow"><span class="pill">⏱ 25–40 minutes</span><span class="pill">👥 Individual + peer feedback</span><span class="pill">🎯 Self-awareness & teamwork</span></div>
+
+<section id="intro" class="panel">
+<h2>Welcome, Insight Explorer</h2>
+<p class="sub">Imagine you have joined a new organization. You will face workplace situations, complete short tasks, reflect on your habits, and optionally invite a trusted peer to give feedback. At the end, you will receive a personal reflection profile organized around the four Johari Window areas.</p>
+<div class="grid">
+<div class="quadrant q-open"><h3>🟩 Open Self</h3><p>What you know about yourself and others also know.</p></div>
+<div class="quadrant q-blind"><h3>🟧 Blind Self</h3><p>Patterns others may notice that you have not noticed yet.</p></div>
+<div class="quadrant q-hidden"><h3>🟦 Hidden Self</h3><p>What you know about yourself but choose not to share.</p></div>
+<div class="quadrant q-unknown"><h3>🟪 Unknown Self</h3><p>Strengths or reactions that may emerge through new experiences.</p></div>
+</div>
+<div class="notice" style="margin-top:16px"><b>Important:</b> This is an educational reflection activity, not a psychological test or diagnosis. The Blind Self cannot be reliably identified from self-report alone; peer feedback is optional and should be respectful, specific, and voluntary. You may skip any personal question.</div>
+<label for="playerName">Name or nickname (optional)</label><input id="playerName" type="text" maxlength="60" placeholder="Enter a name or leave blank">
+<div class="actions"><button onclick="startGame()">Start the game →</button></div>
+</section>
+
+<section id="game" class="panel hidden">
+<div class="meta"><span id="stageName">Stage 1 · Workplace choices</span><span id="counter">1 of 20</span></div><div class="progressline"><div id="progress" class="progressfill"></div></div>
+<div id="questionArea"></div>
+<div id="feedback" class="feedback hidden" aria-live="polite"></div>
+<div class="actions"><button id="submitBtn" onclick="submitAnswer()">Lock in my choice</button><button id="nextBtn" class="secondary hidden" onclick="nextQuestion()">Next →</button><button class="ghost" onclick="skipQuestion()">Skip</button></div>
+</section>
+
+<section id="peer" class="panel hidden">
+<h2>Peer Mirror: What might others see?</h2>
+<p class="sub">If you feel comfortable, ask a trusted classmate who has worked with you to respond based on observed behaviour. You may complete this privately, leave it blank, or use a fictional character for classroom practice. Avoid labels such as “lazy” or “rude”; describe actions and their impact.</p>
+<label for="peerStrength">One strength I have observed in you</label><textarea id="peerStrength" placeholder="For example: You invite quieter people to contribute."></textarea>
+<label for="peerGrowth">One behaviour you might not notice about yourself</label><textarea id="peerGrowth" placeholder="For example: You sometimes answer before others finish speaking."></textarea>
+<label for="peerImpact">How does this behaviour affect the team?</label><textarea id="peerImpact" placeholder="Describe a specific situation and its impact."></textarea>
+<label for="peerComfort">How comfortable are you receiving constructive feedback?</label><select id="peerComfort"><option value="">Choose one (optional)</option><option value="1">1 — Very uncomfortable</option><option value="2">2 — Somewhat uncomfortable</option><option value="3">3 — Neither comfortable nor uncomfortable</option><option value="4">4 — Comfortable</option><option value="5">5 — Very comfortable</option></select>
+<div class="notice">You do not need to reveal sensitive personal information. Feedback should focus on observable, changeable behaviours and be offered with consent.</div>
+<div class="actions"><button onclick="finishGame()">Generate my Johari reflection →</button><button class="secondary" onclick="finishGame(true)">Skip peer feedback</button></div>
+</section>
+
+<section id="results" class="panel hidden">
+<div class="eyebrow" style="color:var(--teal)">Your reflection report</div><h2 id="resultTitle">Your Johari Window Snapshot</h2>
+<p class="sub">Use this as a starting point for reflection and discussion, not as a fixed description of who you are.</p>
+<div id="resultSummary"></div>
+<div class="resultgrid" id="resultBoxes"></div>
+<h3 style="margin-top:24px">Your next-step plan</h3>
+<p>Choose one small behaviour to practise over the next week.</p>
+<label for="goal">My personal development goal</label><textarea id="goal" placeholder="For example: In the next group meeting, I will ask two teammates for input before sharing my own solution."></textarea>
+<label for="evidence">What evidence will tell me I am making progress?</label><textarea id="evidence" placeholder="For example: I will notice whether more team members contribute and ask for feedback afterwards."></textarea>
+<label for="takeaway">My main insight from this activity</label><textarea id="takeaway" placeholder="One thing I learned about myself..."></textarea>
+<div class="actions"><button onclick="downloadReport()">Download my report (.txt)</button><button class="secondary" onclick="window.print()">Print / Save as PDF</button><button class="ghost" onclick="restart()">Play again</button></div>
+<div class="notice" style="margin-top:18px"><b>For classroom discussion:</b> Ask how the Open area might grow through appropriate self-disclosure and feedback; how psychological safety changes the quality of feedback; and why no one should be pressured to disclose private information.</div>
+</section>
+<div class="footer">THE HIDDEN SELF · Johari Window learning simulation · No answers are sent to a server; your responses stay in this browser session.</div>
+</main>
+<script>
+const items = [
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"In a group meeting, you have a strong idea and want the team to adopt it. What would you do first?",opts:[
+["Explain your idea and invite questions or alternatives.",{open:2,blind:1,hidden:0,unknown:0},"Sharing your thinking while inviting input can increase mutual understanding."],
+["Keep quiet because you do not want your idea judged.",{open:0,blind:0,hidden:2,unknown:0},"Holding back a relevant idea may keep your contribution in the Hidden area."],
+["Ask a teammate how your communication usually comes across in meetings.",{open:1,blind:2,hidden:0,unknown:0},"Specific feedback can help you notice the gap between intention and impact."],
+["Volunteer to facilitate the next meeting, even though it is new to you.",{open:0,blind:0,hidden:0,unknown:2},"A new role can reveal capabilities neither you nor the team has seen yet."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"A colleague says you sometimes interrupt people. You feel surprised. Your best next step is to…",opts:[
+["Ask for a specific example and listen before responding.",{open:1,blind:3,hidden:0,unknown:0},"This is a constructive way to explore a possible blind spot."],
+["Explain that you are only trying to help the discussion move faster.",{open:0,blind:0,hidden:0,unknown:0},"Intent matters, but it does not erase impact. Consider asking what the colleague experienced."],
+["Avoid speaking in meetings from now on.",{open:0,blind:0,hidden:1,unknown:0},"A total retreat may not solve the issue. Practise a specific alternative, such as pausing before responding."],
+["Try a new listening technique in the next meeting and ask for feedback.",{open:1,blind:2,hidden:0,unknown:2},"Feedback plus experimentation can reveal habits and new ways of communicating."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"You are worried about an approaching deadline, but the team assumes you are calm. What might help?",opts:[
+["Share the relevant concern and propose a plan together.",{open:2,blind:0,hidden:3,unknown:0},"Appropriate disclosure can make the hidden concern visible and help the team coordinate."],
+["Keep the worry private even though it is affecting your work.",{open:0,blind:0,hidden:2,unknown:0},"Privacy is your choice, but withholding work-relevant information may limit support."],
+["Ask a trusted teammate how your stress appears to others.",{open:1,blind:2,hidden:1,unknown:0},"A respectful check-in may help you compare your self-perception with others' observations."],
+["Try a new planning method to see whether your response to pressure changes.",{open:0,blind:0,hidden:0,unknown:2},"Experimenting can help uncover which strategies and strengths work for you."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"You are asked to lead a task you have never done. How do you respond?",opts:[
+["Decline because you cannot be certain you will be good at it.",{open:0,blind:0,hidden:0,unknown:0},"Avoiding all uncertainty may reduce opportunities to learn."],
+["Accept a manageable part of the task, seek support, and reflect afterwards.",{open:1,blind:1,hidden:0,unknown:3},"A supported stretch experience can reveal previously untested strengths."],
+["Tell the team about relevant skills you already have.",{open:3,blind:0,hidden:1,unknown:0},"Making existing strengths visible can improve task allocation."],
+["Ask the team what they think you should do, then follow their decision.",{open:0,blind:1,hidden:0,unknown:0},"Others' perspectives can help, but you should also consider your own goals and boundaries."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"During a project, you notice a teammate is quiet. What is the most inclusive action?",opts:[
+["Invite their input without putting them on the spot, and allow time to respond.",{open:2,blind:1,hidden:0,unknown:0},"This supports an open climate while respecting different participation styles."],
+["Assume they have nothing to contribute.",{open:0,blind:0,hidden:0,unknown:0},"Silence does not reliably tell you what a person knows or thinks."],
+["Privately ask whether the format makes it difficult for them to contribute.",{open:1,blind:2,hidden:0,unknown:0},"A respectful check-in may uncover barriers and improve mutual understanding."],
+["Change the format to include anonymous idea generation.",{open:2,blind:1,hidden:0,unknown:2},"A new method can create space for contributions that were not visible before."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"Your manager praises your report, but you believe you only succeeded because others helped. What would be a balanced response?",opts:[
+["Acknowledge the team's support and identify the parts you contributed.",{open:3,blind:0,hidden:0,unknown:0},"Accurate sharing of contributions helps colleagues understand each other's strengths."],
+["Reject the praise immediately.",{open:0,blind:0,hidden:1,unknown:0},"You may be overlooking evidence about your own contribution."],
+["Ask what specifically worked well and what you could improve.",{open:1,blind:3,hidden:0,unknown:0},"Specific feedback helps you learn how others experience your work."],
+["Volunteer for a slightly more challenging report next time.",{open:0,blind:0,hidden:0,unknown:2},"A new challenge may help you test and develop your capabilities."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"A teammate disagrees with your proposal. What response is most likely to strengthen collaboration?",opts:[
+["Ask them to explain their reasoning and compare the evidence together.",{open:2,blind:1,hidden:0,unknown:0},"Curiosity can make assumptions visible and support constructive disagreement."],
+["Take the disagreement as proof they do not respect you.",{open:0,blind:0,hidden:0,unknown:0},"This interprets intent without checking it."],
+["Explain why the proposal matters to you, while staying open to alternatives.",{open:2,blind:0,hidden:2,unknown:0},"Sharing relevant reasoning and values can help others understand your perspective."],
+["Try combining both ideas in a small pilot.",{open:1,blind:0,hidden:0,unknown:3},"Experimentation can reveal possibilities that neither person anticipated."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"You realise you often say yes to extra work even when overloaded. What could you try?",opts:[
+["Explain your current workload and negotiate priorities.",{open:3,blind:0,hidden:2,unknown:0},"Clear, appropriate communication helps the team understand your limits."],
+["Keep saying yes so nobody is disappointed.",{open:0,blind:0,hidden:2,unknown:0},"Your limits and concerns remain hidden, which may create later problems."],
+["Ask a colleague whether they have noticed this pattern.",{open:1,blind:3,hidden:0,unknown:0},"A trusted observer may help you recognise a repeated behaviour."],
+["Practise a respectful boundary-setting phrase in a low-risk situation.",{open:1,blind:0,hidden:0,unknown:3},"Trying a new behaviour can reveal your capacity to set boundaries effectively."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"Your team wants to improve meetings. Which action best combines self-awareness and organizational learning?",opts:[
+["Ask each person to share one helpful behaviour and one meeting improvement.",{open:3,blind:2,hidden:0,unknown:0},"Structured, respectful feedback can make team norms more visible."],
+["Let the manager decide what everyone needs to change.",{open:0,blind:0,hidden:0,unknown:0},"A single perspective may miss important team experiences."],
+["Ask people to disclose something deeply personal so everyone can bond.",{open:0,blind:0,hidden:0,unknown:0},"Self-disclosure should be voluntary, relevant, and psychologically safe."],
+["Test a new meeting format for two weeks and review what happens.",{open:1,blind:1,hidden:0,unknown:3},"A low-risk experiment can uncover new team strengths and useful practices."]]},
+{type:"choice",stage:"Stage 1 · Workplace choices",q:"When receiving feedback, you notice an urge to defend yourself. What might help you respond thoughtfully?",opts:[
+["Pause, paraphrase what you heard, and ask a clarifying question.",{open:1,blind:3,hidden:0,unknown:0},"This creates room to consider feedback before deciding what you agree with."],
+["Agree with every comment even if it seems inaccurate.",{open:0,blind:0,hidden:0,unknown:0},"Feedback deserves consideration, not automatic acceptance."],
+["Explain your intention first and end the discussion.",{open:0,blind:0,hidden:0,unknown:0},"Explaining intention alone may prevent you from understanding the other person's experience."],
+["Reflect later and ask for another example if needed.",{open:1,blind:2,hidden:0,unknown:1},"Reflection and clarification can help you assess whether a pattern exists."]]},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I can name strengths that I contribute to a team.",area:"open",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I tell teammates about work-relevant preferences, needs, or concerns when appropriate.",area:"open",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I can describe how my communication affects group work.",area:"open",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I am willing to ask for specific feedback about my behaviour.",area:"blind",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"When feedback surprises me, I can consider it before rejecting it.",area:"blind",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I can think of habits I may not notice without another person's perspective.",area:"blind",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I sometimes keep work-relevant worries or ideas to myself even when sharing could help.",area:"hidden",reverse:true},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I find it difficult to tell a team what support or clarification I need.",area:"hidden",reverse:true},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I avoid sharing a strength because I assume others already know about it.",area:"hidden",reverse:true},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I try unfamiliar roles or tasks that may reveal new abilities.",area:"unknown",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I reflect on what I learn after a challenging or unfamiliar experience.",area:"unknown",reverse:false},
+{type:"scale",stage:"Stage 2 · Self-reflection",q:"I am willing to experiment with a new approach and learn from the outcome.",area:"unknown",reverse:false}
+];
+let index=0, answers={}, currentChoice=null, choiceFeedback=false, playerName="";
+const areaNames={open:"Open Self",blind:"Blind Self",hidden:"Hidden Self",unknown:"Unknown Self"};
+function startGame(){playerName=document.getElementById('playerName').value.trim();document.getElementById('intro').classList.add('hidden');document.getElementById('game').classList.remove('hidden');index=0;renderQuestion();}
+function renderQuestion(){let it=items[index];currentChoice=null;choiceFeedback=false;document.getElementById('feedback').classList.add('hidden');document.getElementById('nextBtn').classList.add('hidden');document.getElementById('submitBtn').classList.remove('hidden');document.getElementById('stageName').textContent=it.stage;document.getElementById('counter').textContent=(index+1)+' of '+items.length;document.getElementById('progress').style.width=((index)/items.length*100)+'%';
+let area=document.getElementById('questionArea');area.innerHTML='';
+let q=document.createElement('div');q.className='question';q.textContent=(index+1)+'. '+it.q;area.appendChild(q);
+if(it.type==='choice'){let opts=document.createElement('div');opts.className='options';it.opts.forEach((o,i)=>{let lab=document.createElement('label');lab.className='option';lab.innerHTML='<input type="radio" name="choice" value="'+i+'"><span></span>';lab.querySelector('span').textContent=o[0];lab.querySelector('input').addEventListener('change',()=>{currentChoice=i;document.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));lab.classList.add('selected')});opts.appendChild(lab)});area.appendChild(opts);}
+else{let hint=document.createElement('p');hint.className='small';hint.textContent='Rate how true this is for you in team or study settings. There are no right or wrong answers.';area.appendChild(hint);let opts=document.createElement('div');opts.className='options';[['1','Not at all true'],['2','A little true'],['3','Sometimes true'],['4','Mostly true'],['5','Very true']].forEach(([v,t])=>{let lab=document.createElement('label');lab.className='option';lab.innerHTML='<input type="radio" name="choice" value="'+v+'"><span></span>';lab.querySelector('span').textContent=v+' — '+t;lab.querySelector('input').addEventListener('change',()=>{currentChoice=Number(v);document.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));lab.classList.add('selected')});opts.appendChild(lab)});area.appendChild(opts);}
+}
+function submitAnswer(){if(currentChoice===null){alert('Choose a response, or use Skip to move on.');return}let it=items[index];answers[index]=currentChoice;let fb=document.getElementById('feedback');fb.classList.remove('hidden');if(it.type==='choice'){let opt=it.opts[currentChoice];fb.innerHTML='<b>Debrief · '+areaNames[Object.keys(opt[1]).find(k=>opt[1][k]>0)||'open']+'</b><br>'+opt[2]+'<br><span class="small">There may be more than one useful response. Your choice is a prompt for reflection, not a personality score.</span>';}else{fb.innerHTML='<b>Response recorded.</b><br>Your rating will contribute to a reflection summary for the '+areaNames[it.area]+'. This self-rating cannot independently establish what others know about you.';}
+document.getElementById('submitBtn').classList.add('hidden');document.getElementById('nextBtn').classList.remove('hidden');}
+function nextQuestion(){if(index<items.length-1){index++;renderQuestion()}else{document.getElementById('game').classList.add('hidden');document.getElementById('peer').classList.remove('hidden');document.getElementById('progress').style.width='100%';}}
+function skipQuestion(){delete answers[index];if(index<items.length-1){index++;renderQuestion()}else{document.getElementById('game').classList.add('hidden');document.getElementById('peer').classList.remove('hidden')}}
+function finishGame(skip=false){document.getElementById('peer').classList.add('hidden');document.getElementById('results').classList.remove('hidden');buildResults(skip);window.scrollTo({top:0,behavior:'smooth'})}
+function buildResults(skip){let scores={open:[],blind:[],hidden:[],unknown:[]};let choiceScores={open:0,blind:0,hidden:0,unknown:0};items.forEach((it,i)=>{if(answers[i]===undefined)return;if(it.type==='scale'){let val=answers[i];if(it.reverse)val=6-val;scores[it.area].push(val)}else{let opt=it.opts[answers[i]][1];Object.keys(choiceScores).forEach(k=>choiceScores[k]+=opt[k]||0)}});
+let avg={};Object.keys(scores).forEach(k=>avg[k]=scores[k].length?scores[k].reduce((a,b)=>a+b,0)/scores[k].length:0);
+let pStrength=document.getElementById('peerStrength').value.trim(),pGrowth=document.getElementById('peerGrowth').value.trim(),pImpact=document.getElementById('peerImpact').value.trim(),comfort=document.getElementById('peerComfort').value;
+document.getElementById('resultTitle').textContent=(playerName?playerName+"'s ":"Your " )+'Johari Window Snapshot';
+let summary='This report reflects your answers in this activity. Use it as a conversation starter, not as a fixed label. ';
+summary+=skip?'You chose to skip peer feedback.':'Peer feedback '+((pStrength||pGrowth||pImpact)?'was added to your reflection.':'was left blank.');document.getElementById('resultSummary').textContent=summary;
+let descriptions={
+open: avg.open>=3.7?'You report being fairly comfortable naming strengths and sharing relevant information. Consider how to make your contributions and needs clear while respecting boundaries.':avg.open>0?'You may benefit from practising how to name your strengths, preferences, and work-relevant concerns in appropriate settings.':'There were not enough self-reflection responses to form a useful summary.',
+blind: avg.blind>=3.7?'You report a willingness to seek and consider feedback. The next step is to ask for specific examples and compare them with your own observations.':avg.blind>0?'You may find it useful to practise receiving feedback with curiosity, pausing before responding, and checking whether a pattern repeats.':'There were not enough self-reflection responses to form a useful summary.',
+hidden: avg.hidden>=3.7?'You report some willingness to share work-relevant information. Continue choosing what to share based on relevance, trust, consent, and professional boundaries.':avg.hidden>0?'You may sometimes keep relevant needs, concerns, or strengths private. Consider whether a small, appropriate disclosure could improve coordination or support.':'There were not enough self-reflection responses to form a useful summary.',
+unknown: avg.unknown>=3.7?'You report a tendency to experiment and reflect. Stretch tasks, new roles, and thoughtful feedback can help you learn more about your capabilities.':avg.unknown>0?'You may benefit from trying a manageable new role or method and reflecting on what it reveals about your strengths and development needs.':'There were not enough self-reflection responses to form a useful summary.'};
+let boxes=document.getElementById('resultBoxes');boxes.innerHTML='';
+Object.keys(scores).forEach(k=>{let div=document.createElement('div');div.className='resultbox';let rating=avg[k]?Math.round(avg[k]*20):0;div.innerHTML='<span class="tag">'+areaNames[k]+'</span><div class="bar"><span style="width:'+rating+'%"></span></div><b>'+(avg[k]?avg[k].toFixed(1)+' / 5':'No rating')+'</b><p>'+descriptions[k]+'</p>';boxes.appendChild(div)});
+if(pStrength||pGrowth||pImpact){let div=document.createElement('div');div.className='resultbox';div.style.gridColumn='1/-1';div.innerHTML='<h3>Peer mirror notes</h3>'+(pStrength?'<p><b>Observed strength:</b> '+esc(pStrength)+'</p>':'')+(pGrowth?'<p><b>Possible blind spot to explore:</b> '+esc(pGrowth)+'</p>':'')+(pImpact?'<p><b>Team impact:</b> '+esc(pImpact)+'</p>':'')+(comfort?'<p><b>Comfort receiving feedback:</b> '+comfort+'/5</p>':'')+'<p class="small">These comments are one person’s perspective, not objective proof. Look for specific examples and patterns across time.</p>';boxes.appendChild(div)}
+window.reportText=`THE HIDDEN SELF — JOHARI WINDOW REFLECTION\nParticipant: ${playerName||'Not provided'}\n\n${Object.keys(scores).map(k=>`${areaNames[k]}: ${avg[k]?avg[k].toFixed(1)+'/5':'No rating'}\n${descriptions[k]}`).join('\n\n')}\n\nPeer strength: ${pStrength||'Not provided'}\nPossible blind spot: ${pGrowth||'Not provided'}\nTeam impact: ${pImpact||'Not provided'}\nFeedback comfort: ${comfort||'Not provided'}\n\nDevelopment goal: \n\nEvidence of progress: \n\nMain insight: \n\nNote: Educational reflection only; not a validated psychological assessment. The Blind Self requires other-perspective information and cannot be determined from self-ratings alone.`;
+}
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function downloadReport(){let t=window.reportText||'Complete the game first.';t+='\n'+ '\nPersonal development goal: '+document.getElementById('goal').value+'\nEvidence of progress: '+document.getElementById('evidence').value+'\nMain insight: '+document.getElementById('takeaway').value;let blob=new Blob([t],{type:'text/plain;charset=utf-8'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='johari-window-reflection.txt';a.click();URL.revokeObjectURL(a.href)}
+function restart(){index=0;answers={};currentChoice=null;choiceFeedback=false;['peerStrength','peerGrowth','peerImpact','peerComfort','goal','evidence','takeaway'].forEach(id=>document.getElementById(id).value='');document.getElementById('results').classList.add('hidden');document.getElementById('intro').classList.remove('hidden');document.getElementById('playerName').value=playerName;}
+</script>
+</body>
+</html>
